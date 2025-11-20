@@ -1,2 +1,3 @@
-# <font color="pink">:imp::fu:PROJECTE MÀQUINA ARCADE:fu::imp:</font>
+# :imp::fu:PROJECTE MÀQUINA ARCADE:fu::imp:
+---
 ## tt
