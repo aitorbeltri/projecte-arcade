@@ -1,2 +1,2 @@
-# :imp:PROJECTE MÀQUINA ARCADE:imp:
+# :imp::fu:PROJECTE MÀQUINA ARCADE:fu::imp:
 ## tt
