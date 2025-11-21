@@ -1,4 +1,4 @@
-# :imp::tongue:***PROJECTE MÀQUINA ARCADE***:tongue::imp:
+# :eggplant::peach::rotating_light:***PROJECTE MÀQUINA ARCADE***:rotating_light::peach::eggplant:
 ---
 ### Aquesta aplicació es un menú el qual gràcies al fitxer jocs.py, permet jugar a dos jocs: 
 ### - **Pedra, Paper o Tisora** contra un robot gràcies a robot.py.
