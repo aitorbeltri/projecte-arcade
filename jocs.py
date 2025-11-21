@@ -94,6 +94,48 @@ def nana():
         else:
             print("Si us plau, introdueix un número vàlid entre 1 i 100.")
 
+def nana1():
+
+    print("Benvingut al joc d'Endivinar el número!")
+
+    numero_secret = random.randint(1, 100)
+
+    intents = 0
+
+    while True:
+        numero_jugador = input("Introdueix un número per endivinar el codi secret (entre 1 i 100): ")
+        
+        numero_jugador = int(numero_jugador)
+
+        diferencia = numero_jugador - numero_secret
+        
+        if numero_jugador > 1 or numero_jugador < 100:
+            intents += 1
+
+            if diferencia <= 5:
+                print("Extremadament calent!")
+            
+            elif diferencia <= 10:
+                print("Molt calent.")
+
+            elif diferencia <= 20:
+                print("Calent.")
+
+            elif diferencia <= 30:
+                print("Fred.")
+
+            elif diferencia == 0:
+                print(f"Felicitats! Has endivinat el número ({numero_secret}) en {intents} intents.")
+                break
+
+            elif numero_jugador == 1:
+                print(f"{numero_secret}")
+            
+            time.sleep(2)
+        else:
+            print("Si us plau, introdueix un número vàlid entre 1 i 100.")
+
 if __name__ == "__main__":
     janken()
     nana()
+    nana1()
