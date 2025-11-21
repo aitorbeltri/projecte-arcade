@@ -1,4 +1,4 @@
-# :imp::trollface:***PROJECTE MÀQUINA ARCADE***:trollface::imp:
+# :imp::tongue:***PROJECTE MÀQUINA ARCADE***:tongue::imp:
 ---
 ### Aquesta aplicació es un menú el qual gràcies al fitxer jocs.py, permet jugar a dos jocs: 
 ### - **Pedra, Paper o Tisora** contra un robot gràcies a robot.py.
