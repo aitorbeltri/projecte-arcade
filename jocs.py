@@ -146,7 +146,25 @@ def nana1():
         else:
             print("Si us plau, introdueix un número vàlid entre 1 i 100.")
 
+def sort():
+    print("Benvingut al joc de Llençar la moneda!")
+    jugador = input("Escull cara o creu: ").lower()
+    
+    if jugador not in robot.moneda.game:
+        print("Elecció invàlida. Torna-ho a intentar.")
+        return
+    
+    robot_jugada = robot.moneda().playing()
+    print(f"La moneda ha caigut en: {robot_jugada}")
+
+    if jugador == robot_jugada:
+        print("Has gu anyat!")
+    else:
+        print("Has perdut!")
+    
+
 if __name__ == "__main__":
     janken()
     nana()
     nana1()
+    sort()

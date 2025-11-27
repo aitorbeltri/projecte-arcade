@@ -15,15 +15,15 @@ while (True):
         case "1":
             import jocs
             jocs.janken()
-            time.sleep(3)
+            time.sleep(2)
         case "2":
             import jocs
             jocs.nana()
-            time.sleep(3)
+            time.sleep(2)
         case "3":
             import jocs
-            jocs.nana1()
-            time.sleep(3)
+            jocs.sort()
+            time.sleep(2)
         case "4":
             print("Apagant el mini arcade")
             break
