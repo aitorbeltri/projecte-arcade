@@ -14,7 +14,7 @@
 #### El joc de Endevinar el número té dos modes de joc, amb l'ajuda de més alt o més baic o amb pistes de calor:
 #### - Més alt o més baix: El propi programa agafa un número aleatori, amb la llibreria random del 1 al 100, ens avisa si hem posat un número que no esta dins del 1 al 100 o altre caràcter.Ens va dient si el número que hem possat es més gran o més petit, i apart ens recompta els intents i els diu al final cuan adivinem el número secret.
 #### - Pistes de calor: El programa agafa un número aleatori del 1 al 100, amdos icluits. Nosaltres possant un número el propi joc ens dira si estem aprop amb unes pistes o si l'hem encertat ens felicitara dient-mos cuants d'intents hem necessitat:
-####  - Molt fred: té una diferencia igual o superior a 50 amb el número secret.
-####  - Fred: té una diferencia igual o superior a 30 amb el número secret.
-#### - Calent: té una diferencia igual o superior a 15 amb el número secret.
-#### - Molt calent: té una diferencia igual o superior a 5 amb el número secret.
+#### 1. Molt fred: té una diferencia igual o superior a 50 amb el número secret.
+#### 2. Fred: té una diferencia igual o superior a 30 amb el número secret.
+#### 3. Calent: té una diferencia igual o superior a 15 amb el número secret.
+#### 4. Molt calent: té una diferencia igual o superior a 5 amb el número secret.
