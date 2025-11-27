@@ -7,7 +7,7 @@ while (True):
     print("3. Jugar a endivina el número amb pistes")
     print("4. Sortir")
 
-    opcio = input("Selecciona la opció (1-3): ")
+    opcio = input("Selecciona la opció (1-4): ")
     
     time.sleep(2)
 

@@ -11,5 +11,10 @@
 #### - 3 victories: En aquest mode el primer jugador, jugador o el robot, que arribi a 3 victories guanyara el joc.
 #### - 5 rondes: En aquest es jugaran 5 rondes, i al final es comptaran els punts, els que decidiran el guanyador.
 ***
-#### El joc de Endevinar el número sol té un mode de joc:
-#### - Número aleatori: El propi programa agafa un número aleatori, amb la llibreria random del 1 al 100, ens avisa si hem posat un número que no esta dins del 1 al 100 o altre caràcter.Ens va dient si el número que hem possat es més gran o més petit, i apart ens recompta els intents i els diu al final cuan adivinem el número secret.
+#### El joc de Endevinar el número té dos modes de joc, amb l'ajuda de més alt o més baic o amb pistes de calor:
+#### - Més alt o més baix: El propi programa agafa un número aleatori, amb la llibreria random del 1 al 100, ens avisa si hem posat un número que no esta dins del 1 al 100 o altre caràcter.Ens va dient si el número que hem possat es més gran o més petit, i apart ens recompta els intents i els diu al final cuan adivinem el número secret.
+#### - Pistes de calor: El programa agafa un número aleatori del 1 al 100, amdos icluits. Nosaltres possant un número el propi joc ens dira si estem aprop amb unes pistes o si l'hem encertat ens felicitara dient-mos cuants d'intents hem necessitat:
+####  - Molt fred: té una diferencia igual o superior a 50 amb el número secret.
+####  - Fred: té una diferencia igual o superior a 30 amb el número secret.
+#### - Calent: té una diferencia igual o superior a 15 amb el número secret.
+#### - Molt calent: té una diferencia igual o superior a 5 amb el número secret.

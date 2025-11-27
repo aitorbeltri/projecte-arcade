@@ -66,33 +66,47 @@ import time
 
 def nana():
 
-    print("Benvingut al joc d'Endivinar el número!")
+    print("Selecciona quin mode de joc vols jugar:")
 
-    numero_secret = random.randint(1, 100)
+    print("1. Endivina el número en més alt o més baix.")
+    print("2. Endivina el número amb pistes de calor.")
+    pistes = input("Selecciona el mode (1-2):")
 
-    intents = 0
+    time.sleep(1)
+    
+    match pistes:
+        case "1":
+            print("Benvingut al joc d'Endivinar el número!")
 
-    while True:
-        numero_jugador = input("Introdueix un número per endivinar el codi secret (entre 1 i 100): ")
+            numero_secret = random.randint(1, 100)
+
+            intents = 0
+
+            while True:
+                numero_jugador = input("Introdueix un número per endivinar el codi secret (entre 1 i 100): ")
+                
+                numero_jugador = int(numero_jugador)
+                
+                if numero_jugador > 0 or numero_jugador < 101:
+                    intents += 1
+
+                    if numero_jugador < numero_secret:
+                        print("Número massa baix. Torna a provar.")
+
+                    elif numero_jugador > numero_secret:
+                        print("Número massa alt. Torna a provar.")
+
+                    else:
+                        print(f"Felicitats! Has endivinat el número ({numero_secret}) en {intents} intents.")
+                        break
+                    
+                    time.sleep(2)
+                else:
+                    print("Si us plau, introdueix un número vàlid entre 1 i 100.")
         
-        numero_jugador = int(numero_jugador)
-        
-        if numero_jugador > 1 or numero_jugador < 100:
-            intents += 1
-
-            if numero_jugador < numero_secret:
-                print("Número massa baix. Torna a provar.")
-
-            elif numero_jugador > numero_secret:
-                print("Número massa alt. Torna a provar.")
-
-            else:
-                print(f"Felicitats! Has endivinat el número ({numero_secret}) en {intents} intents.")
-                break
-            
-            time.sleep(2)
-        else:
-            print("Si us plau, introdueix un número vàlid entre 1 i 100.")
+        case "2":
+            nana1()
+    
 
 def nana1():
 
@@ -107,29 +121,26 @@ def nana1():
         
         numero_jugador = int(numero_jugador)
 
-        diferencia = numero_jugador - numero_secret
+        diferencia = abs(numero_jugador - numero_secret)
         
-        if numero_jugador > 1 or numero_jugador < 100:
+        if numero_jugador > 0 or numero_jugador < 101:
             intents += 1
 
-            if diferencia <= 5:
-                print("Extremadament calent!")
-            
-            elif diferencia <= 10:
-                print("Molt calent.")
-
-            elif diferencia <= 20:
-                print("Calent.")
-
-            elif diferencia <= 30:
-                print("Fred.")
-
-            elif diferencia == 0:
+            if diferencia == 0:
                 print(f"Felicitats! Has endivinat el número ({numero_secret}) en {intents} intents.")
                 break
 
-            elif numero_jugador == 1:
-                print(f"{numero_secret}")
+            elif diferencia <= 5:
+                print("Molt calent!")
+
+            elif diferencia <= 15:
+                print("Calent!")
+
+            elif diferencia <= 30:
+                print("Fred!")
+            
+            elif diferencia <= 50:
+                print("Molt fred!")
             
             time.sleep(2)
         else:
