@@ -30,9 +30,10 @@ while (True):
     print("1. Jugar a Pedra. Paper o Tisores")
     print("2. Jugar a endivina el número")
     print("3. Jugar a llençar la moneda")
-    print("4. Sortir")
+    print("4. Jugar a Tres en Ratlla")
+    print("5. Sortir")
 
-    opcio = input("Selecciona la opció (1-4): ")
+    opcio = input("Selecciona la opció (1-5): ")
     
     time.sleep(2)
 
@@ -50,6 +51,10 @@ while (True):
             jocs.sort()
             time.sleep(2)
         case "4":
+            import jocs
+            jocs.joctresenratlla()
+            time.sleep(2)
+        case "5":
             print("Apagant el mini arcade")
             break
 

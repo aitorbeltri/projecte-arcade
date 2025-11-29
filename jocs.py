@@ -213,8 +213,89 @@ def sort():
         print("Has perdut!")
     
 
+def joctresenratlla():
+    print("Benvingut al joc de Tres en Ratlla!")
+        
+    fila1 = [" ", " ", " "]
+    fila2 = [" ", " ", " "]
+    fila3 = [" ", " ", " "]
+    
+    while True:
+        
+        
+
+        print("   a   b   c")
+        print("1  " + fila1[0] + " | " + fila1[1] + " | " + fila1[2])
+        print("  ---+---+---")
+        print("2  " + fila2[0] + " | " + fila2[1] + " | " + fila2[2])
+        print("  ---+---+---")
+        print("3  " + fila3[0] + " | " + fila3[1] + " | " + fila3[2])
+
+        torn_jugador = input("Tria una coordenada (1a a 3c): ").lower()
+        if torn_jugador not in robot.tresenratlla.game:
+            print("Elecció invàlida. Torna a intentar.")
+            continue
+        
+        if torn_jugador == "1a":
+            fila1[0] = "X"
+        elif torn_jugador == "1b":
+            fila1[1] = "X"
+        elif torn_jugador == "1c":
+            fila1[2] = "X"
+        elif torn_jugador == "2a":
+            fila2[0] = "X"
+        elif torn_jugador == "2b":
+            fila2[1] = "X"
+        elif torn_jugador == "2c":
+            fila2[2] = "X"
+        elif torn_jugador == "3a":
+            fila3[0] = "X"
+        elif torn_jugador == "3b":
+            fila3[1] = "X"
+        elif torn_jugador == "3c":
+            fila3[2] = "X"
+        else:
+            print("Elecció invàlida. Torna a intentar.")
+            continue
+
+        while True:
+            eleccio_robot = robot.tresenratlla().playing()
+            
+            if eleccio_robot == "1a" and fila1[0] == " ":
+                fila1[0] = "O"
+                break
+            elif eleccio_robot == "1b" and fila1[1] == " ":
+                fila1[1] = "O"
+                break
+            elif eleccio_robot == "1c" and fila1[2] == " ":
+                fila1[2] = "O"
+                break
+            elif eleccio_robot == "2a" and fila2[0] == " ":
+                fila2[0] = "O"
+                break
+            elif eleccio_robot == "2b" and fila2[1] == " ":
+                fila2[1] = "O"
+                break
+            elif eleccio_robot == "2c" and fila2[2] == " ":
+                fila2[2] = "O"
+                break
+            elif eleccio_robot == "3a" and fila3[0] == " ":
+                fila3[0] = "O"
+                break
+            elif eleccio_robot == "3b" and fila3[1] == " ":
+                fila3[1] = "O"
+                break
+            elif eleccio_robot == "3c" and fila3[2] == " ":
+                fila3[2] = "O"
+                break
+            else:
+                continue
+    
+        
+
 if __name__ == "__main__":
     janken()
     nana()
     nana1()
     sort()
+    joctresenratlla()
